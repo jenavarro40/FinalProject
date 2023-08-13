@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleform.css">
+    <title>Booking</title>
+</head>
+<header>
+    <nav>
+      <h1>Choose Your Travel Packages</h1>
+      <ul>
+        <div class="navbar">
+          <a href="./main.html">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">Destinations
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./Canada/Canada.html">Canada</a>
+              <a href="./Colombia/Colombia.html">Colombia</a>
+              <a href="./Thailand/Thailand.html">Thailand</a>
+              <a href="./Vietnam/Vietnam.html">Vietnam</a>
+            </div>
+          </div>
+          <a href="./form.html">Booking</a></li>
+          <a href="./About/About.html">About</a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+      
+   <body>
+
+    <form id="formulario">
+        <label for="name" id="first">Name:</label>
+        <input type="text" id="name" required placeholder="Leo Messi"><br>
+
+        <label for="Phone" id="first">Phone:</label>
+        <input type="tel" id="Phone" required placeholder="3506721101"><br>
+
+        <label for="Adress" id="first">Adress:</label>
+        <input type="text" id="Adress" required placeholder="carrigan 2325"><br>
+
+        <label for="Emailc" id="first">E-Mail:</label>
+        <input type="email" id="Emailc" required placeholder="name@example.com"><br>
+
+        <h3>Country</h3>
+        <select name="Tavels" id="Travel" onchange="Value()">
+            <option value="nothing">  </option>
+            <option value="Canada">Canada</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="Thailand">Thailand</option>
+        </select>
+
+        <h3>Plan</h3>
+        <div class="plan">
+				        <label for="Basic" id="radio">
+                  <input type="radio" name="choose" value="Basic" onclick="Value()" checked id="choose">Basic
+                </label>
+                <label for="Medium" id="radio">
+				          <input type="radio" name="choose" value="Medium" onclick="Value()" id="choose">Medium
+                </label>
+                <label for="Premium" id="radio">
+                  <input type="radio" name="choose" value="Premium" onclick="Value()" id="choose">Premium
+                </label>
+                <label for="Deluxe" id="radio">
+                  <input type="radio" name="choose" value="Deluxe" onclick="Value()" id="choose">Deluxe
+                </label>
+        </div>
+                <p class="titlecost">The cost of your travel will be:</p>
+                <p id="change_value">....</p>
+                    <table id="tabla">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>E-Mail</th>
+                            <th>Destination</th>
+                            <th>Plan</th>
+                            <th>Value</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="datos">
+                    </tbody>
+                </table>
+
+
+
+
+        <input id="buttonadd" type="button" value="Add" onclick="agregarPersona()">
+    </form>
+    <footer>
+        <div id="getnewinfo">
+          <h4>Subscribe To Get Our Travel Tips And Hot Deals 
+            <form id="formsubmit">
+              <input type="text" placeholder="Your Email Address">
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </h4>
+        </div>
+        <p>&copy; 2023 Group 7. All rights reserved.</p>
+        <div class="footer-link">
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies</a>
+        <a href="#">Complaints</a>
+      </div>
+      </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

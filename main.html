@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel log</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="searchbar.css">
+</head>
+<body>
+  <header>
+        
+    <div class="logo"><h1>Travel Log</h1></div>  
+<nav class="navbar">
+<div class="menu">
+        <a href="main.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Destinations
+            <i class="fa fa-caret-down"></i>
+            </button>
+          <div class="dropdown-content">
+            <a href="./Canada/Canada.html">Canada</a>
+            <a href="./Colombia/Colombia.html">Colombia</a>
+            <a href="./Thailand/Thailand.html">Thailand</a>
+            <a href="./Vietnam/Vietnam.html">Vietnam</a>
+          </div>
+        </div>
+    <a href="form.html">Booking</a>
+        <a href="About/About.html">About</a>
+        
+      </nav>
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+      <form action="" method="get" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search destinations, packages & more">
+      <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+
+  <h2 style="text-align: center; font-size: 40px; margin-top: 20px;">Our Destinations</h2>
+
+  <section class="destinations">
+
+    <a href="Vietnam/Vietnam.html">
+    <nav class="country">
+      <img class="resize" src="img/Vietnam1.jpg" alt="Vietnam">
+      <h3>Vietnam</h3>
+    </nav>
+    </a>
+
+    <a href="Canada/Canada.html">
+    <nav class="country">
+      <img class="resize" src="img/Canada.jpg" alt="Canada">
+      <h3>Canada</h3>
+    </nav>
+  </section>
+  <section class="destinations">
+    <a href="Colombia/Colombia.html">
+      <nav class="country">
+        <img class="resize" src="img/Colombia.jpg" alt="Colombia">
+        <h3>Colombia</h3>
+      </nav>
+    </a>
+
+    <a href="Thailand/Thailand.html">
+    <nav class="country">
+      <img class="resize" src="img/Thailand.jpg" alt="Thailand">
+      <h3>Thailand</h3>
+    </nav>
+   </a>
+  </section>
+
+  <footer>
+    <div id="getnewinfo">
+      <h4>Subscribe To Get Our Travel Tips And Hot Deals 
+        <form>
+          <input type="text" placeholder="Your Email Address">
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </h4>
+    </div>
+    <p>&copy; 2023 Group 7. All rights reserved.</p>
+    <div class="footer-link">
+    <a href="#">Terms and Conditions</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Cookies</a>
+    <a href="#">Complaints</a>
+  </div>
+  </footer>
+</body>
+</html>
